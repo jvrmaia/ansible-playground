@@ -1,0 +1,8 @@
+---
+- name: Debug date
+  hosts: all
+  tasks:
+    - command: date
+      register: date
+
+    - debug: var=date
